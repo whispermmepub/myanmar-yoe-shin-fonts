@@ -1,0 +1,40 @@
+/*
+ * Inline Font CSS for GitHub Pages / Jekyll / Hugo
+ * 
+ * Copy this CSS into your theme's CSS file or inline in HTML
+ */
+@font-face {
+  font-family: 'YoeShin';
+  src: url('https://raw.githubusercontent.com/YOUR_USER/myanmar-yoe-shin-fonts/main/fonts/A10_YoeShin-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Burma026';
+  src: url('https://raw.githubusercontent.com/YOUR_USER/myanmar-yoe-shin-fonts/main/fonts/Burma026-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'PuPu';
+  src: url('https://raw.githubusercontent.com/YOUR_USER/myanmar-yoe-shin-fonts/main/fonts/M01_PuPu%20Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Myittar';
+  src: url('https://raw.githubusercontent.com/YOUR_USER/myanmar-yoe-shin-fonts/main/fonts/M03_Myittar-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'MyanmarAyar';
+  src: url('https://raw.githubusercontent.com/YOUR_USER/myanmar-yoe-shin-fonts/main/fonts/MyanmarAyarTyepwriter.ttf') format('truetype');
+  font-weight: normal;
+  font-display: swap;
+}
+.font-yoeshin    { font-family: 'YoeShin', sans-serif !important; }
+.font-burma026   { font-family: 'Burma026', sans-serif !important; }
+.font-pupu       { font-family: 'PuPu', sans-serif !important; }
+.font-myittar    { font-family: 'Myittar', sans-serif !important; }
+.font-myanmar-ayar { font-family: 'MyanmarAyar', monospace !important; }

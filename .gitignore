@@ -1,0 +1,10 @@
+# Generated files
+*.pdf
+*.epub
+examples/*.pdf
+examples/*.epub
+examples/__pycache__/
+
+# OS files
+.DS_Store
+Thumbs.db

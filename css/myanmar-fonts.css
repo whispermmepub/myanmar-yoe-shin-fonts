@@ -1,0 +1,82 @@
+/*
+ * Myanmar Yoe Shin Font Collection
+ * Web Font CSS - မြန်မာဖွန့် အသုံးပြုနည်း
+ * 
+ * Usage: Link this CSS in your HTML/website
+ *   <link rel="stylesheet" href="css/myanmar-fonts.css">
+ *
+ * Or use @font-face in your own CSS
+ */
+
+/* ============================================
+   A10_YoeShin - ယိုးရှင် - Classic Myanmar Font
+   ============================================ */
+@font-face {
+  font-family: 'YoeShin';
+  src: url('../fonts/A10_YoeShin-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   Burma026 - မြန်မာ ၀၂၆ - Bold Myanmar Font
+   ============================================ */
+@font-face {
+  font-family: 'Burma026';
+  src: url('../fonts/Burma026-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   M01_PuPu Bold - ပူပူ - Decorative Myanmar Font
+   ============================================ */
+@font-face {
+  font-family: 'PuPu';
+  src: url('../fonts/M01_PuPu%20Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   M03_Myittar - မြတ် - Modern Myanmar Font
+   ============================================ */
+@font-face {
+  font-family: 'Myittar';
+  src: url('../fonts/M03_Myittar-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   Myanmar Ayar Typewriter - အရေး - Typewriter Style
+   ============================================ */
+@font-face {
+  font-family: 'MyanmarAyar';
+  src: url('../fonts/MyanmarAyarTyepwriter.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   Convenience Classes
+   ============================================ */
+.font-yoeshin    { font-family: 'YoeShin', sans-serif; }
+.font-burma026   { font-family: 'Burma026', sans-serif; }
+.font-pupu       { font-family: 'PuPu', sans-serif; }
+.font-myittar    { font-family: 'Myittar', sans-serif; }
+.font-myanmar-ayar { font-family: 'MyanmarAyar', monospace; }
+
+/* ============================================
+   Body Default - Use any Myanmar font
+   ============================================ */
+body.myanmar-font-yoeshin     { font-family: 'YoeShin', sans-serif; }
+body.myanmar-font-burma026    { font-family: 'Burma026', sans-serif; }
+body.myanmar-font-pupu        { font-family: 'PuPu', sans-serif; }
+body.myanmar-font-myittar     { font-family: 'Myittar', sans-serif; }
+body.myanmar-font-ayar        { font-family: 'MyanmarAyar', monospace; }
