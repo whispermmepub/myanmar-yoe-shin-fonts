@@ -2,7 +2,7 @@
 
 > **မြန်မာဖွန့် အသုံးပြုနည်း - Myanmar Font Collection for All Platforms**
 
-မြန်မာ Unicode ဖွန့် ၅ မျိုး ပါဝင်ပါသည်။ ဘယ်နေရာမဆို အသုံးပြုနိုင်ပါသည်။
+မြန်မာ Unicode ဖွန့် ၈ မျိုး ပါဝင်ပါသည်။ ဘယ်နေရာမဆို အသုံးပြုနိုင်ပါသည်။
 
 ---
 
@@ -15,6 +15,9 @@
 | **M01_PuPu Bold** | `M01_PuPu Bold.ttf` | 54 KB | Myat Ei Ei San (Suika) | Decorative |
 | **M03_Myittar** | `M03_Myittar-Regular.ttf` | 63 KB | netpanchi.com | Modern |
 | **Myanmar Ayar** | `MyanmarAyarTyepwriter.ttf` | 220 KB | Digital Signed | Typewriter |
+| **MyanmarPaOhOne** | `MyanmarPaOhOne.ttf` | 334 KB | - | Traditional |
+| **PangLong** | `PangLong_2011feb7.ttf` | 427 KB | - | Elegant |
+| **Phantee Hand Written** | `Phantee Hand Written.ttf` | 129 KB | - | Handwritten |
 
 ---
 
@@ -34,6 +37,9 @@ Then use font classes:
 <p class="font-pupu">PuPu ဖွန့်ဖြင့် ရေးထားသည်</p>
 <p class="font-myittar">Myittar ဖွန့်ဖြင့် ရေးထားသည်</p>
 <p class="font-myanmar-ayar">Ayar Typewriter ဖွန့်ဖြင့် ရေးထားသည်</p>
+<p class="font-paoh">MyanmarPaOhOne ဖွန့်ဖြင့် ရေးထားသည်</p>
+<p class="font-panglong">PangLong ဖွန့်ဖြင့် ရေးထားသည်</p>
+<p class="font-phantee">Phantee Hand Written ဖွန့်ဖြင့် ရေးထားသည်</p>
 ```
 
 ### Method 2: Inline @font-face
@@ -186,6 +192,9 @@ These fonts are **free for personal use**.
 - **M01_PuPu Bold** - Copyright (c) 2024 Myat Ei Ei San (Suika)
 - **M03_Myittar** - Copyright (c) 2024 netpanchi.com
 - **Myanmar Ayar** - Version 3.30, 2020
+- **MyanmarPaOhOne** - Free for personal use
+- **PangLong** - Free for personal use
+- **Phantee Hand Written** - Free for personal use
 
 For commercial use, please contact the respective font authors.
 

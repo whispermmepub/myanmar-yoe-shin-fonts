@@ -63,6 +63,40 @@
   font-display: swap;
 }
 
+
+/* ============================================
+   MyanmarPaOhOne - မြန်မာပအိုဝင် - Traditional Myanmar Font
+   ============================================ */
+@font-face {
+  font-family: 'PaOhOne';
+  src: url('../fonts/MyanmarPaOhOne.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   PangLong - ပန်းလောင် - Elegant Myanmar Font
+   ============================================ */
+@font-face {
+  font-family: 'PangLong';
+  src: url('../fonts/PangLong_2011feb7.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ============================================
+   Phantee Hand Written - ဖန်တီး - Handwritten Style
+   ============================================ */
+@font-face {
+  font-family: 'PhanteeHW';
+  src: url('../fonts/Phantee%20Hand%20Written.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* ============================================
    Convenience Classes
    ============================================ */
@@ -71,6 +105,9 @@
 .font-pupu       { font-family: 'PuPu', sans-serif; }
 .font-myittar    { font-family: 'Myittar', sans-serif; }
 .font-myanmar-ayar { font-family: 'MyanmarAyar', monospace; }
+.font-paoh       { font-family: 'PaOhOne', sans-serif; }
+.font-panglong   { font-family: 'PangLong', sans-serif; }
+.font-phantee    { font-family: 'PhanteeHW', cursive; }
 
 /* ============================================
    Body Default - Use any Myanmar font
@@ -80,3 +117,6 @@ body.myanmar-font-burma026    { font-family: 'Burma026', sans-serif; }
 body.myanmar-font-pupu        { font-family: 'PuPu', sans-serif; }
 body.myanmar-font-myittar     { font-family: 'Myittar', sans-serif; }
 body.myanmar-font-ayar        { font-family: 'MyanmarAyar', monospace; }
+body.myanmar-font-paoh        { font-family: 'PaOhOne', sans-serif; }
+body.myanmar-font-panglong    { font-family: 'PangLong', sans-serif; }
+body.myanmar-font-phantee     { font-family: 'PhanteeHW', cursive; }
