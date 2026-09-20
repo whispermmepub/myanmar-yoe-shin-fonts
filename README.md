@@ -1,226 +1,219 @@
 # Myanmar Yoe Shin Font Collection
 
-> **မြန်မာဖွန့် အသုံးပြုနည်း - Myanmar Font Collection for All Platforms**
+> မြန်မာ Unicode ဖောင့်များ စုစည်းထားသော repository — Web, Android, Flutter, React, EPUB, PDF နှင့် Desktop projects များတွင် အသုံးပြုနိုင်ရန်။
 
-မြန်မာ Unicode ဖွန့် ၈ မျိုး ပါဝင်ပါသည်။ ဘယ်နေရာမဆို အသုံးပြုနိုင်ပါသည်။
+## 📚 Included Fonts
+
+Repository ထဲတွင် မြန်မာဖောင့်များစွာ ပါဝင်ပြီး **Walone** family ကိုလည်း ထည့်သွင်းထားပါသည်။
+
+### Walone — One Click AI မှ web တွင်အသုံးပြုထားသော family
+
+| Font | File | Weight | Style |
+|---|---|---:|---|
+| Walone Thin | `Walone-Thin.ttf` | 100 | Thin |
+| Walone Regular | `Walone-Regular.ttf` | 400 | Regular |
+| Walone Bold | `Walone-Bold.ttf` | 700 | Bold |
+
+> Walone ၏ original web CSS တွင် တွေ့ရသော font-face definitions အရ Thin/Regular/Bold weight များကို သီးခြားထားရှိထားပါသည်။ Repo ထဲရှိ filename များသည် အသုံးပြုရလွယ်ကူစေရန် ရိုးရှင်းထားသော filenames ဖြစ်ပါသည်။
+
+### Other featured fonts
+
+- A10 YoeShin
+- A07 Yadanabon (Light / Regular / Bold)
+- Burma026
+- M01 PuPu Bold
+- M03 Myittar
+- Myanmar Ayar Typewriter
+- Myanmar PaOh
+- PangLong
+- Phantee Hand Written
+- Tharlon
+- နှင့် အခြား မြန်မာ Unicode ဖောင့်များ
+
+ဖောင့်ဖိုင်များ၏ လက်ရှိစာရင်းအပြည့်အစုံကို `fonts/` folder တွင် ကြည့်နိုင်ပါသည်။
 
 ---
 
-## 📋 Font List
+## 🌐 Web Usage
 
-| Font | File | Size | Author | Style |
-|------|------|------|--------|-------|
-| **A10_YoeShin** | `A10_YoeShin-Regular.ttf` | 58 KB | Kaung Myat | Classic |
-| **Burma026** | `Burma026-Regular.ttf` | 263 KB | Moezed | Bold |
-| **M01_PuPu Bold** | `M01_PuPu Bold.ttf` | 54 KB | Myat Ei Ei San (Suika) | Decorative |
-| **M03_Myittar** | `M03_Myittar-Regular.ttf` | 63 KB | netpanchi.com | Modern |
-| **Myanmar Ayar** | `MyanmarAyarTyepwriter.ttf` | 220 KB | Digital Signed | Typewriter |
-| **MyanmarPaOhOne** | `MyanmarPaOhOne.ttf` | 334 KB | - | Traditional |
-| **PangLong** | `PangLong_2011feb7.ttf` | 427 KB | - | Elegant |
-| **Phantee Hand Written** | `Phantee Hand Written.ttf` | 129 KB | - | Handwritten |
-
----
-
-## 🌐 Web / HTML / Blog
-
-### Method 1: CSS Link
+### Option 1 — Use the repository CSS
 
 ```html
-<link rel="stylesheet" href="https://raw.githubusercontent.com/YOUR_USER/myanmar-yoe-shin-fonts/main/css/myanmar-fonts.css">
+<link rel="stylesheet"
+      href="https://raw.githubusercontent.com/whispermmepub/myanmar-yoe-shin-fonts/main/css/myanmar-fonts.css">
 ```
 
-Then use font classes:
+ပြီးလျှင်:
 
 ```html
-<p class="font-yoeshin">ယိုးရှင် ဖွန့်ဖြင့် ရေးထားသည်</p>
-<p class="font-burma026">Burma026 ဖွန့်ဖြင့် ရေးထားသည်</p>
-<p class="font-pupu">PuPu ဖွန့်ဖြင့် ရေးထားသည်</p>
-<p class="font-myittar">Myittar ဖွန့်ဖြင့် ရေးထားသည်</p>
-<p class="font-myanmar-ayar">Ayar Typewriter ဖွန့်ဖြင့် ရေးထားသည်</p>
-<p class="font-paoh">MyanmarPaOhOne ဖွန့်ဖြင့် ရေးထားသည်</p>
-<p class="font-panglong">PangLong ဖွန့်ဖြင့် ရေးထားသည်</p>
-<p class="font-phantee">Phantee Hand Written ဖွန့်ဖြင့် ရေးထားသည်</p>
+<p class="font-yoeshin">ယိုးရှင် ဖောင့်</p>
+<p class="font-walone">Walone ဖောင့်</p>
+<p class="font-burma026">Burma026 ဖောင့်</p>
+<p class="font-pupu">PuPu ဖောင့်</p>
+<p class="font-myittar">Myittar ဖောင့်</p>
 ```
 
-### Method 2: Inline @font-face
+### Walone weights
+
+```html
+<p class="font-walone font-walone-thin">Walone Thin</p>
+<p class="font-walone">Walone Regular</p>
+<p class="font-walone font-walone-bold">Walone Bold</p>
+```
+
+### Option 2 — Direct @font-face
 
 ```css
 @font-face {
-  font-family: 'MyanmarFont';
-  src: url('fonts/A10_YoeShin-Regular.ttf') format('truetype');
+  font-family: 'Walone';
+  src: url('fonts/Walone-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Walone';
+  src: url('fonts/Walone-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
   font-display: swap;
 }
 
 body {
-  font-family: 'MyanmarFont', sans-serif;
+  font-family: 'Walone', sans-serif;
 }
 ```
 
-### Method 3: GitHub Pages
+### GitHub Pages / jsDelivr
 
-1. `fonts/` folder ကို repo ထဲထည့်ပါ
-2. CSS ထဲမှာ path ပြင်ပါ: `src: url('/fonts/A10_YoeShin-Regular.ttf')`
-3. OR `css/myanmar-fonts.css` ကို link ထည့်ပါ
+Raw GitHub URL ကို သုံးနိုင်ပါသည်။ Public website တွင် long-term delivery အတွက် repository CDN/hosting configuration ကို project လိုအပ်ချက်အတိုင်း ရွေးချယ်ပါ။
 
 ---
 
-## 📄 PDF (Python)
+## 📱 Android / Flutter / React
 
-```python
-from fpdf import FPDF
+### Android
 
-pdf = FPDF()
-pdf.add_font('YoeShin', '', 'fonts/A10_YoeShin-Regular.ttf')
-pdf.add_font('PuPu', '', 'fonts/M01_PuPu Bold.ttf')
-pdf.add_page()
-
-pdf.set_font('YoeShin', '', 14)
-pdf.cell(0, 10, 'ယိုးရှင် ဖွန့်ဖြင့် PDF ရေးခြင်း')
-
-pdf.set_font('PuPu', '', 12)
-pdf.cell(0, 10, 'PuPu ဖွန့်ဖြင့် PDF ရေးခြင်း')
-
-pdf.output('output.pdf')
+```
+app/src/main/assets/fonts/
+└── Walone-Regular.ttf
 ```
 
----
+Android XML/Compose project တွင် project structure အလိုက် font resource ထည့်ပြီး အသုံးပြုနိုင်ပါသည်။
 
-## 📱 EPUB
+### Flutter
 
-```python
-from ebooklib import epub
-import os
+```yaml
+flutter:
+  fonts:
+    - family: Walone
+      fonts:
+        - asset: fonts/Walone-Regular.ttf
+          weight: 400
+        - asset: fonts/Walone-Bold.ttf
+          weight: 700
+        - asset: fonts/Walone-Thin.ttf
+          weight: 100
+```
 
-book = epub.EpubBook()
-book.set_identifier('myanmar-fonts-book')
-book.set_title('Myanmar Font Demo')
-book.set_language('my')
+### React / CSS
 
-# Font file ထည့်
-fonts = {
-    'yoeshin': 'fonts/A10_YoeShin-Regular.ttf',
-    'pupu': 'fonts/M01_PuPu Bold.ttf',
-    'myittar': 'fonts/M03_Myittar-Regular.ttf',
-}
-
-for name, path in fonts.items():
-    with open(path, 'rb') as f:
-        font_data = f.read()
-    item = epub.EpubItem(
-        uid=name,
-        file_name=f'fonts/{os.path.basename(path)}',
-        media_type='application/octet-stream',
-        content=font_data
-    )
-    book.add_item(item)
-
-# CSS ထဲမှာ font-face
-css = b'''
+```css
 @font-face {
-    font-family: 'YoeShin';
-    src: url('fonts/A10_YoeShin-Regular.ttf') format('truetype');
+  font-family: 'Walone';
+  src: url('/fonts/Walone-Regular.ttf') format('truetype');
+  font-weight: 400;
 }
-body { font-family: 'YoeShin', serif; line-height: 1.8; }
-'''
-style = epub.EpubItem(uid='style', file_name='style/myanmar.css',
-                      media_type='text/css', content=css)
-book.add_item(style)
+
+.walone {
+  font-family: 'Walone', sans-serif;
+}
 ```
 
 ---
 
-## 📝 Markdown / GitHub README
+## 📄 EPUB
 
-GitHub Markdown မှာ CSS မသုံးနိုင်ပေမယ့်:
+EPUB ထဲသို့ font file ကို embed လုပ်ပြီး CSS `@font-face` ဖြင့် reference လုပ်နိုင်ပါသည်။
 
-1. **GitHub Pages** - CSS ချိတ်ပြီး မြန်မာဖွန့် သုံးနိုင်
-2. **Jekyll Blog** - `_includes/head.html` ထဲမှာ link ထည့်
-3. **Hugo Blog** - `layouts/partials/head.html` ထဲမှာ link ထည့်
-4. **WordPress** - Theme CSS ထဲမှာ @font-face ထည့်
+```css
+@font-face {
+  font-family: 'Walone';
+  src: url('../fonts/Walone-Regular.ttf');
+  font-weight: 400;
+}
 
-```markdown
-# My Blog
-
-> Font: [YoeShin](https://github.com/YOUR_USER/myanmar-yoe-shin-fonts)
-
-<!-- GitHub Pages မှာ blog post ထဲမှာ CSS ထည့်ပြီး သုံးနိုင် -->
+body {
+  font-family: 'Walone', serif;
+}
 ```
+
+EPUB ထုတ်လုပ်ရာတွင် font file ကို EPUB package ထဲသို့ ထည့်ရန် မမေ့ပါနှင့်။
 
 ---
 
-## 🛠 Setup
-
-### Quick Start (3 steps)
-
-```bash
-# 1. Clone or download
-git clone https://github.com/YOUR_USER/myanmar-yoe-shin-fonts.git
-
-# 2. Copy fonts to your project
-cp fonts/*.ttf /your/project/fonts/
-
-# 3. Link CSS (for web)
-# Add to your HTML:
-# <link rel="stylesheet" href="css/myanmar-fonts.css">
-```
-
-### Folder Structure
+## 📁 Folder Structure
 
 ```
 myanmar-yoe-shin-fonts/
 ├── fonts/
-│   ├── A10_YoeShin-Regular.ttf      (58 KB)
-│   ├── Burma026-Regular.ttf          (263 KB)
-│   ├── M01_PuPu Bold.ttf            (54 KB)
-│   ├── M03_Myittar-Regular.ttf      (63 KB)
-│   └── MyanmarAyarTyepwriter.ttf    (220 KB)
+│   ├── Walone-Thin.ttf
+│   ├── Walone-Regular.ttf
+│   ├── Walone-Bold.ttf
+│   ├── A10_YoeShin-Regular.ttf
+│   ├── A07_Yadanabon-Light.ttf
+│   ├── A07_Yadanabon-Regular.ttf
+│   ├── A07_Yadanabon-Bold.ttf
+│   └── ... other Myanmar fonts
 ├── css/
-│   └── myanmar-fonts.css
+│   ├── myanmar-fonts.css
+│   └── inline-fonts.css
 ├── examples/
-│   └── (usage examples)
 ├── demo.html
 └── README.md
 ```
 
 ---
 
-## 📌 License
+## 🧪 Demo
 
-These fonts are **free for personal use**.
-- **A10_YoeShin** - Copyright (c) 2024 Kaung Myat
-- **Burma026** - Copyright (c) 2022 Moezed
-- **M01_PuPu Bold** - Copyright (c) 2024 Myat Ei Ei San (Suika)
-- **M03_Myittar** - Copyright (c) 2024 netpanchi.com
-- **Myanmar Ayar** - Version 3.30, 2020
-- **MyanmarPaOhOne** - Free for personal use
-- **PangLong** - Free for personal use
-- **Phantee Hand Written** - Free for personal use
+Browser တွင် `demo.html` ကိုဖွင့်ပြီး font rendering ကို စမ်းသပ်နိုင်ပါသည်။
 
-For commercial use, please contact the respective font authors.
+GitHub Pages ကို enable လုပ်ထားပါက repository ၏ Pages site မှတစ်ဆင့် demo ကို online ကြည့်နိုင်ပါသည်။
 
 ---
 
-## 🔗 Links
+## ⚠️ Font Licensing
 
-- **Facebook**: [Whisper Of Words](https://www.facebook.com/mmebookwhisper/)
-- **Telegram**: [@TheBookR](https://t.me/TheBookR)
-- **YouTube**: [@whisperofwordsebook](https://www.youtube.com/@whisperofwordsebook)
+ဒီ repository ထဲရှိ font တစ်ခုချင်းစီ၏ copyright/license သည် မတူနိုင်ပါသည်။
 
----
-
-## 💡 Tips
-
-| Platform | How to Use |
-|----------|------------|
-| **Website/Blog** | CSS `@font-face` + class |
-| **GitHub Pages** | Same as website |
-| **WordPress** | Theme settings or Custom CSS |
-| **PDF** | Python `fpdf2` library |
-| **EPUB** | `ebooklib` + embedded fonts |
-| **App (Flutter/React)** | Copy fonts/ to assets folder |
-| **Desktop App** | System font install |
-| **Figma/Design** | Install font on system |
+- Repository ထဲရှိခြင်းသည် font အားလုံးကို commercial redistribution ခွင့်ရှိသည်ဟု မဆိုလိုပါ။
+- မူရင်း font author / copyright holder ၏ license ကို စစ်ဆေးပြီးမှ commercial use သို့မဟုတ် redistribution ပြုလုပ်ပါ။
+- Walone အပါအဝင် license မရှင်းလင်းသော third-party fonts များအတွက် မူရင်း rights holder ၏ permission/license ကို အတည်ပြုပါ။
 
 ---
 
-*Created for Myanmar Epub Community*
+## 🔗 Repository
+
+**GitHub:** https://github.com/whispermmepub/myanmar-yoe-shin-fonts
+
+---
+
+## 💡 Quick Start
+
+```bash
+git clone https://github.com/whispermmepub/myanmar-yoe-shin-fonts.git
+cd myanmar-yoe-shin-fonts
+```
+
+Web project အတွက်:
+
+```html
+<link rel="stylesheet"
+      href="https://raw.githubusercontent.com/whispermmepub/myanmar-yoe-shin-fonts/main/css/myanmar-fonts.css">
+```
+
+---
+
+*Myanmar Epub Community အတွက် စုစည်းထားသော font collection.*
